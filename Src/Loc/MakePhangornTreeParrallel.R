@@ -7,7 +7,7 @@ args = c('i=c(1:10)', 'a=DemoData/UNICORNs_alignments/alignments', 'o=Output/Pha
 
 args = c('i=c(1:184000)', 'a=DemoData/UNICORNs_alignments/alignments', 'o=Output/UnicornsOverlap', 't=Data/zoonomiaMasterTreeScientific.tree', 's=T', 'd=T', 'f=Data/Dev/unicornsFilter.rds') #This is a debug argument set. It is used to set arguments locally, when not running the code through a bash script.
 
-
+args = c('i=c(1:184000)', 'a=/share/ceph/scratch/mit221/11010942', 'o=Output/UnicornsOverlap', 't=Data/zoonomiaMasterTreeScientific.tree', 's=T', 'd=T', 'f=Data/Dev/unicornsFilter.rds') #This is a debug argument set. It is used to set arguments locally, when not running the code through a bash script.
 args = c('i=c(1:10)', 'a=/share/ceph/scratch/mit221/10934053/Alignments/alignments', 'o=Output/UNICORNsTreeFiles', 't=Data/zoonomiaMasterTreeScientific.tree', 's=F', 'd=T') #This is a debug argument set. It is used to set arguments locally, when not running the code through a bash script.
 args = commandArgs(trailingOnly = TRUE)
 
