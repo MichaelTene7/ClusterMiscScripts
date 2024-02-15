@@ -33,6 +33,7 @@ if(isDNA){
 
 if(!is.na(filterFile)){
   filterString = readRDS(filterFile)
+  print(filterString)
 }
 
 if(bySingles){
