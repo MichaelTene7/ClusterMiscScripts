@@ -41,6 +41,7 @@ if(bySingles){
   for(i in  fileNumber){
     print(i)
     currentAlignment = fileList[i]
+    print(currentAlignment)
     if(!is.na(filterFile)){
       includedFiles = 0
       if(!currentAlignment %in% filterString){message("skip"); next}else{message(currentAlignment); includedFiles = includedFiles+1}
