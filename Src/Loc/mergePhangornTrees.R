@@ -10,7 +10,7 @@ alignFolder = cmdArgImport('a')
 outputFile = cmdArgImport('o')
 masterTree = cmdArgImport('t')
 addMaster = cmdArgImport('m')
-
+noFilename = cmdArgImport('n')
 
 fileList = list.files(alignFolder)
 multiphylo = data.frame()
@@ -29,7 +29,12 @@ for(i in 1:length(fileList)){
   alignmentPath = paste(alignFolder, "/", currentAlignment, sep="")
   algnmentName = elementName = strsplit(currentAlignment, "\\.")[[1]][1]
   treeString = readLines(alignmentPath)
-  writeLines(paste(algnmentName, treeString, sep = "\t"), outFile)
+  if(noFilename){
+    writeLines(treeString, outFile)
+  }else{
+    writeLines(paste(algnmentName, treeString, sep = "\t"), outFile)
+  }
+
   
 }
 close(outFile)
