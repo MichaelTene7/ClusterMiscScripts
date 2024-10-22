@@ -35,4 +35,4 @@ for(i in 1:length(fileList)){
 close(outFile)
 
 
-readTrees(outputFile)
+#readTrees(outputFile)
