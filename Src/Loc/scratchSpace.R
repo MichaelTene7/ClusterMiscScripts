@@ -27,6 +27,8 @@ startNodes = binaryHillerMaster$edge[,1]
 startNodes = table(startNodes)
 nonBinNodes = names(startNodes)[!startNodes ==2]
 
+read.tree("Data/NewZoonomiaMasterTreePrunedToAlignmentSpecies.nwk")
+
 
 randomUnicorns = sample(183000, 100)
 duplicated(randomUnicorns)
